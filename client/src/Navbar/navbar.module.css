@@ -1,0 +1,20 @@
+.navcont{
+    background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #e1e1ff 100%);
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+.img{
+    width: 80px;
+    height: 70px;
+    margin-left: 1em;
+}
+.title{
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 1em;
+}

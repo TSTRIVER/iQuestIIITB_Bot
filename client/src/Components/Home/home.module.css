@@ -1,0 +1,40 @@
+.maincont {
+  background-color: rgb(192, 231, 246);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+.left_cont {
+  background-image: linear-gradient(90deg, #e1e1ff 10%, #020024 120%);
+  height: 100%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.right_cont {
+  height: 100%;
+  width: 55%;
+  background-color: orange;
+}
+.content {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 1rem;
+}
+.h1 {
+  font-size: 2.5rem;
+  color: rgba(96, 96, 250, 0.788);
+}
+.h2 {
+  font-size: 2rem;
+  color: rgba(12, 12, 89, 0.788);
+}
+.h3 {
+  font-size: 1.5rem;
+  color: rgba(12, 12, 89, 0.788);
+}
