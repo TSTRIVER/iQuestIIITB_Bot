@@ -1,0 +1,146 @@
+.infodeskcont {
+  width: 100vw;
+  height: 200vh;
+  background-color: rgb(128, 230, 142);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.maincont {
+  width: 70%;
+  height: 100%;
+  background-color: white;
+  margin-top: 2em;
+}
+.directormsg {
+  width: 100%;
+  height: 3vh;
+  border-radius: 10px;
+  background-color: rgb(31, 7, 120);
+  color: white;
+  font-size: medium;
+}
+.m1 {
+  text-align: center;
+}
+.m2 {
+  padding-left: 2em;
+}
+.directorcontent {
+  width: 100%;
+  height: 55vh;
+  /* background-color: royalblue; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cardscont {
+  width: 100%;
+  height: 30vh;
+  background-color: burlywood;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.acad_cards {
+  width: 20%;
+  height: 80%;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  font-weight: bolder;
+  color: rgb(31, 7, 120);
+  align-items: center;
+}
+.noticescont {
+  width: 100%;
+  height: 60vh;
+  background-color: green;
+  display: flex;
+  justify-content: space-between;
+}
+.cont {
+  height: 100%;
+  width: 30%;
+  background-color: white;
+}
+.noticeheading {
+  width: 100%;
+  height: 15%;
+  background-color: rgb(254, 165, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  font-weight: bolder;
+  color: white;
+}
+.noticecontent {
+  width: 100%;
+  height: 70%;
+  background-color: aqua;
+}
+.noticefootcontent {
+  width: 100%;
+  height: 15%;
+  background-color: rgb(31, 7, 120);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 1em;
+}
+.viewnoticebtn {
+  width: 30%;
+  height: 60%;
+  background-color: skyblue;
+  color: white;
+  font-size: medium;
+  font-weight: bolder;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.recruitercont {
+  margin-top: 1em;
+  width: 100%;
+  height: 20vh;
+  background-color: whitesmoke;
+}
+.recruitheading {
+  width: 100%;
+  height: 50%;
+  background-color: cyan;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: x-large;
+  font-weight: bolder;
+}
+.directorcontact {
+  width: 35%;
+  height: 100%;
+  /* background-color: darkgoldenrod; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.directormessage {
+  width: 45%;
+  height: 100%;
+  /* background-color: darkolivegreen; */
+  color: black;
+  font-size: medium;
+  text-align: justify;
+  text-wrap: wrap;
+  font-weight: bolder;
+}
+.details {
+  color: rgb(31, 7, 120);
+  font-weight: bolder;
+  font-size: large;
+}

@@ -1,0 +1,57 @@
+.navcont {
+  background-color: rgb(31, 7, 120);
+  width: 100vw;
+  height: 4vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.leftcont,
+.rightcont {
+  height: 100%;
+  width: 30%;
+  color: white;
+  font-size: large;
+  text-align: center;
+  cursor: pointer;
+}
+.bannercont {
+  width: 100%;
+  height: 20vh;
+}
+.subnavs {
+  width: 100vw;
+  height: 8vh;
+  background-color: rgb(31, 7, 120);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  font-size: large;
+  cursor: pointer;
+}
+.carouselcont {
+  width: 100vw;
+  height: 55vh;
+  background-color: aqua;
+}
+.headlinescont {
+  width: 100vw;
+  height: 6vh;
+  background-color: rgb(31, 7, 120);
+  display: flex;
+}
+.heading {
+  width: 20%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headlines {
+  width: 70%;
+  height: 100%;
+  background-color: rgb(31, 7, 120);
+}
