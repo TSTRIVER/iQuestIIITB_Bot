@@ -7,6 +7,69 @@ const InfoDesk = () => {
 
   let noticesection = ["Notice", "Tender", "Contracts"];
 
+  let notices = [
+    {
+      name: "List of Eligible/ Ineligible Applicants for the Post of Registrar ",
+    },
+    {
+      name: "Notice regarding payment of hostel fee and mess charges (Jan-Jun 2024) ",
+    },
+    {
+      name: "Notification to refund application fee for the post of Assistant Registrar - Feb 2024 ",
+    },
+    {
+      name: "Application form for the post of Assistant Professor (On Contract, Pay Level-10) 2024",
+    },
+    {
+      name: "The detailed rolling advertisement for the post of Assistant Professor (On Contract, Pay Level-10) - 2024",
+    },
+  ];
+
+  let tenders = [
+    {
+      name: "Corrigendum on TENDER for Hiring of Building for Hostel Facility to Students (Boys) - 2024",
+    },
+    {
+      name: "Corrigendum on TENDER for Hiring of Building for Hostel Facility to Students (Girls) - 2024 ",
+    },
+    {
+      name: "NOTICE INVITING TENDER for Hiring of Building for Hostel Facility to Students (Boys) - 2024",
+    },
+    {
+      name: "NOTICE INVITING TENDER for Hiring of Building for Hostel Facility to Students (Girls) - 2024 ",
+    },
+  ];
+
+  let companies = [
+    "Amazon",
+    "Microsoft",
+    "NVIDIA",
+    "Samsung",
+    "Adobe",
+    "Qualcomm",
+    "Atlassian",
+    "MAQ Software",
+    "NI (National Instruments)",
+    "Flipkart",
+    "Newzera",
+    "TCS",
+    "Intuit",
+    "COMVIVA",
+    "JIVOX",
+    "GEP Worldwide",
+    "Infoedge",
+    "Sciative Solutions",
+    "OpenFive",
+  ];
+
+  const view = (index) => {
+    if (index === 0) {
+      window.location.href = "https://iiitbhopal.ac.in/#!/Notice";
+    } else {
+      window.location.href = "https://iiitbhopal.ac.in/#!/Tender";
+    }
+  };
+
   return (
     <div className={styles.infodeskcont}>
       <div className={styles.maincont}>
@@ -50,10 +113,8 @@ const InfoDesk = () => {
         <div className={styles.cardscont}>
           {cardscontent.map((ele, index) => {
             return (
-              <div className={styles.acad_cards}>
-                <div className={styles.acad_cards} key={index}>
-                  {ele}
-                </div>
+              <div className={styles.acad_cards} key={index}>
+                {ele}
               </div>
             );
           })}
@@ -62,12 +123,37 @@ const InfoDesk = () => {
           {noticesection.map((ele, index) => {
             return (
               <div className={styles.cont}>
-                <div className={styles.noticeheading} key={index}>
+                <div
+                  className={styles.noticeheading}
+                  key={index}
+                  style={
+                    index !== 0
+                      ? { backgroundColor: "rgb(31, 7, 120)" }
+                      : { backgroundColor: "rgb(254, 165, 0)" }
+                  }
+                >
                   {ele}
                 </div>
-                <div className={styles.noticecontent}></div>
+                <div className={styles.noticecontent}>
+                  <div className={styles.scrollingBulletin}>
+                    <ul>
+                      {(index === 0 ? notices : tenders).map((ele, index) => {
+                        return (
+                          <li className={styles.noticeitem} key={index}>
+                            {ele.name}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                </div>
                 <div className={styles.noticefootcontent}>
-                  <button className={styles.viewnoticebtn}>View All</button>
+                  <button
+                    className={styles.viewnoticebtn}
+                    onClick={() => view(index)}
+                  >
+                    View All
+                  </button>
                 </div>
               </div>
             );
@@ -75,6 +161,33 @@ const InfoDesk = () => {
         </div>
         <div className={styles.recruitercont}>
           <div className={styles.recruitheading}>Our Recruiters</div>
+          <div className={styles.companyBulletin}>
+            <ul className={styles.bulletinCompanyList}>
+              {companies.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className={styles.linkscont}>
+          <button
+            className={styles.linkbuttons}
+            style={{ backgroundColor: "rgb(31, 7, 120)" }}
+            onClick={() => {
+              window.location.href = "https://iiitbhopal.ac.in/#!/Gallery";
+            }}
+          >
+            Photo Gallery
+          </button>
+          <button
+            className={styles.linkbuttons}
+            style={{ backgroundColor: "rgb(254, 165, 0)" }}
+            onClick={() => {
+              window.location.href = "https://iiitbhopal.ac.in/#!/Press";
+            }}
+          >
+            Press & Media
+          </button>
         </div>
       </div>
     </div>

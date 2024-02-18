@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./HomePage.module.css";
 import banner from "../../images/banner.jpg";
 import InfoDesk from "../InfoDesks/InfoDesk";
+import Footer from "../../Footer/Footer";
 
 const HomePage = () => {
   let subnavlinks = [
@@ -49,6 +50,7 @@ const HomePage = () => {
         <div className={styles.headlines}></div>
       </div>
       <InfoDesk />
+      <Footer />
     </>
   );
 };

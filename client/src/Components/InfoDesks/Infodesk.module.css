@@ -1,15 +1,14 @@
 .infodeskcont {
   width: 100vw;
   height: 200vh;
-  background-color: rgb(128, 230, 142);
   display: flex;
   justify-content: center;
   overflow: hidden;
+  border-bottom: 10px solid rgb(31, 7, 120);
 }
 .maincont {
   width: 70%;
   height: 100%;
-  background-color: white;
   margin-top: 2em;
 }
 .directormsg {
@@ -19,6 +18,7 @@
   background-color: rgb(31, 7, 120);
   color: white;
   font-size: medium;
+  margin-top: 1em;
 }
 .m1 {
   text-align: center;
@@ -37,7 +37,6 @@
 .cardscont {
   width: 100%;
   height: 30vh;
-  background-color: burlywood;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,7 +44,9 @@
 .acad_cards {
   width: 20%;
   height: 80%;
-  border-radius: 15px;
+  border: 3px solid gray;
+  border-radius: 10px;
+  box-shadow: 2px 2px;
   cursor: pointer;
   background-color: whitesmoke;
   display: flex;
@@ -58,7 +59,6 @@
 .noticescont {
   width: 100%;
   height: 60vh;
-  background-color: green;
   display: flex;
   justify-content: space-between;
 }
@@ -81,7 +81,8 @@
 .noticecontent {
   width: 100%;
   height: 70%;
-  background-color: aqua;
+  overflow: hidden;
+  position: relative;
 }
 .noticefootcontent {
   width: 100%;
@@ -95,7 +96,7 @@
 .viewnoticebtn {
   width: 30%;
   height: 60%;
-  background-color: skyblue;
+  background-color: rgb(65, 193, 243);
   color: white;
   font-size: medium;
   font-weight: bolder;
@@ -107,12 +108,12 @@
   margin-top: 1em;
   width: 100%;
   height: 20vh;
-  background-color: whitesmoke;
+  border: 1px solid rgba(0, 0, 0, 0.089);
 }
 .recruitheading {
   width: 100%;
   height: 50%;
-  background-color: cyan;
+  background-color: rgb(1, 135, 188);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,7 +124,6 @@
 .directorcontact {
   width: 35%;
   height: 100%;
-  /* background-color: darkgoldenrod; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -132,7 +132,6 @@
 .directormessage {
   width: 45%;
   height: 100%;
-  /* background-color: darkolivegreen; */
   color: black;
   font-size: medium;
   text-align: justify;
@@ -143,4 +142,82 @@
   color: rgb(31, 7, 120);
   font-weight: bolder;
   font-size: large;
+}
+.scrollingBulletin {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  animation: scroll 15s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.scrollingBulletin ul {
+  padding: 0;
+  margin: 0;
+}
+
+.scrollingBulletin li {
+  list-style-type: none;
+  padding: 5px;
+}
+.noticeitem {
+  color: rgb(1, 135, 188);
+}
+.companyBulletin {
+  overflow: hidden;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.bulletinCompanyList {
+  white-space: nowrap;
+  animation: scrolling 22s linear infinite;
+  display: flex;
+  align-items: center;
+}
+
+.bulletinCompanyList > li {
+  font-size: large;
+  font-weight: bold;
+  margin-right: 1.5em;
+}
+
+.linkscont {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.linkbuttons {
+  width: 48%;
+  height: 70%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: x-large;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
