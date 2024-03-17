@@ -6,7 +6,7 @@ import Footer from "../../Footer/Footer";
 
 const HomePage = () => {
   let subnavlinks = [
-    "Home (Current)",
+    "Home",
     "About Us",
     "Academics",
     "Department",
@@ -25,7 +25,7 @@ const HomePage = () => {
           Admission | pgportal.gov.in | Placement | Notice | |
         </div>
         <div className={styles.rightcont}>
-          Web mail | ERP Login | Office Login | A+ | A- | A|
+          Moodle | Web mail | ERP Login | Office Login | A+ | A- | A|
         </div>
       </div>
       <div className={styles.bannercont}>
