@@ -17,13 +17,21 @@
   align-items: center;
   padding: 10px;
 }
+.section  p{
+  font-size: 1vw;
+}
 .heading {
   width: 90%;
   height: 20%;
   background-color: rgb(31, 7, 120);
   color: white;
-  font-size: large;
+  font-size: 1.2vw;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }

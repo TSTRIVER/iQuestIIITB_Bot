@@ -78,7 +78,7 @@ const InfoDesk = () => {
         </div>
         <div className={styles.directorcontent}>
           <div className={styles.directorcontact}>
-            <img alt="director_profile" src={directorImg} />
+            <img alt="director_profile" src={directorImg} className={styles.dirimg}/>
             <h2 className={styles.details}>Dr. Ashutosh Kumar Singh</h2>
             <h2 className={styles.details}>Director, IIIT Bhopal</h2>
             <h2 className={styles.details}>director@iiitbhopal.ac.in</h2>
@@ -114,7 +114,7 @@ const InfoDesk = () => {
           {cardscontent.map((ele, index) => {
             return (
               <div className={styles.acad_cards} key={index}>
-                {ele}
+                <a href="https://iiitbhopal.ac.in/#!/M0002/SM0035/NSM0030" style={{textDecoration:"none"}}>{ele}</a>
               </div>
             );
           })}

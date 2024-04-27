@@ -14,26 +14,58 @@ const Footer = () => {
       </div>
       <div className={styles.section}>
         <div className={styles.heading}>Useful Links</div>
-        <ul style={{ marginTop: "2em", fontSize: "large", cursor: "pointer" }}>
-          <li>Vision & Mission</li>
-          <li>Notice</li>
-          <li>Location on Map</li>
-          <li>E-Notice App</li>
+        <ul style={{ marginTop: "2vw", fontSize: "1.2vw" }}>
+          <li>
+            <a href="https://iiitbhopal.ac.in/#!/M0001/SM0002/">
+              Vision & Mission
+            </a>
+          </li>
+          <li>
+            <a href="https://iiitbhopal.ac.in/#!/M0001/SM0002/">Notice</a>
+          </li>
+          <li>
+            <a href="https://iiitbhopal.ac.in/#!/M0001/SM0002/">
+              Location on Map
+            </a>
+          </li>
+          <li>
+            <a href="https://iiitbhopal.ac.in/#!/M0001/SM0002/">E-Notice App</a>
+          </li>
         </ul>
       </div>
       <div className={styles.section}>
         <div className={styles.heading}>Important Links</div>
-        <ul style={{ marginTop: "2em", fontSize: "large", cursor: "pointer" }}>
-          <li>Scholarship</li>
-          <li>T&P Cell</li>
-          <li>Convocation 2024</li>
-          <li>Admission</li>
-          <li>B.Tech. Programme</li>
+        <ul style={{ marginTop: "2vw", fontSize: "1.2vw" }}>
+          <li>
+            <a href="https://iiitbhopal.ac.in/#!/M0002/SM0036/NSM0036">
+              Scholarship
+            </a>
+          </li>
+          <li>
+            <a href="https://iiitbhopal.ac.in/#!/M0002/SM0036/NSM0036">
+              T&P Cell
+            </a>
+          </li>
+          <li>
+            <a href="https://iiitbhopal.ac.in/#!/M0002/SM0036/NSM0036">
+              Convocation 2024
+            </a>
+          </li>
+          <li>
+            <a href="https://iiitbhopal.ac.in/#!/M0002/SM0036/NSM0036">
+              Admission
+            </a>
+          </li>
+          <li>
+            <a href="https://iiitbhopal.ac.in/#!/M0002/SM0036/NSM0036">
+              B.Tech. Programme
+            </a>
+          </li>
         </ul>
       </div>
       <div className={styles.section}>
         <div className={styles.heading}>Helpdesk</div>
-        <ul style={{ marginTop: "2em", fontSize: "large", cursor: "pointer" }}>
+        <ul style={{ marginTop: "2vw", fontSize: "1.2vw" }}>
           <li>Fax No : +91-0755-2670562</li>
           <li>Last Updated : Fri, Feb 16, 2024</li>
         </ul>
